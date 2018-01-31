@@ -2,6 +2,7 @@
   "name": "burger-builder",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://merodiro.github.io/burger-builder",
   "dependencies": {
     "autoprefixer": "7.1.6",
     "babel-core": "6.26.0",
@@ -30,12 +31,11 @@
     "object-assign": "4.1.1",
     "postcss-flexbugs-fixes": "3.2.0",
     "postcss-loader": "2.0.8",
-    "preact": "^8.2.7",
-    "preact-compat": "^3.18.0",
     "promise": "8.0.1",
     "prop-types": "^15.6.0",
     "raf": "3.4.0",
     "react": "^16.2.0",
+    "react-aux": "^1.1.0",
     "react-dev-utils": "^5.0.0",
     "react-dom": "^16.2.0",
     "style-loader": "0.19.0",
@@ -49,7 +49,9 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "node scripts/test.js --env=jsdom",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -92,5 +94,8 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.1.0"
   }
 }
