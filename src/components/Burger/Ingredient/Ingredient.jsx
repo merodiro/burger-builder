@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react'
+import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 
 import classes from './Ingredient.css'
@@ -9,8 +9,8 @@ const Ingredient = ({ type }) => {
   if (type === 'bread-top') {
     content = (
       <Fragment>
-        <div className={classes.seeds1}></div>
-        <div className={classes.seeds2}></div>
+        <div className={classes.seeds1} />
+        <div className={classes.seeds2} />
       </Fragment>
     )
   }
@@ -24,8 +24,8 @@ Ingredient.propTypes = {
     'meat',
     'cheese',
     'salad',
-    'bacon'
-  ]).isRequired
+    'bacon',
+  ]).isRequired,
 }
 
 export default Ingredient

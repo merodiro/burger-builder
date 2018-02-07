@@ -3,7 +3,7 @@ import React from 'react'
 import classes from './BuildControls.css'
 import BuildControl from './BuildControl/BuildControl'
 
-const BuildControls = ({ ingredientAdded, ingredientRemoved, disabled, price }) => {
+const BuildControls = (props) => {
   const controls = [
     { label: 'Salad', type: 'salad' },
     { label: 'Bacon', type: 'bacon' },
@@ -12,14 +12,16 @@ const BuildControls = ({ ingredientAdded, ingredientRemoved, disabled, price }) 
   ]
   return (
     <div className={classes.BuildControls}>
-      <p>Current Price: <strong>{price.toFixed(2)}</strong></p>
+      <p>
+        Current Price: <strong>{props.price.toFixed(2)}</strong>
+      </p>
       {controls.map(ctrl => (
         <BuildControl
           key={ctrl.label}
           label={ctrl.label}
-          added={() => ingredientAdded(ctrl.type)}
-          removed={() => ingredientRemoved(ctrl.type)}
-          disabled={disabled[ctrl.type]}
+          added={() => props.ingredientAdded(ctrl.type)}
+          removed={() => props.ingredientRemoved(ctrl.type)}
+          disabled={props.disabled[ctrl.type]}
         />
       ))}
     </div>
