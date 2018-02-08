@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 
-import classes from './Ingredient.css'
+import classes from './Ingredient.module.css'
 
 const Ingredient = ({ type }) => {
   let content = null

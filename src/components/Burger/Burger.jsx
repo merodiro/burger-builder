@@ -1,6 +1,6 @@
 import React from 'react'
 
-import classes from './Burger.css'
+import classes from './Burger.module.css'
 import Ingredient from './Ingredient/Ingredient'
 
 export default ({ ingredients }) => {
