@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Modal> renders the same output 1`] = `
+<React.Fragment>
+  <Backdrop />
+  <div
+    className="Modal"
+  >
+    Hello world
+  </div>
+</React.Fragment>
+`;
+
+exports[`<Modal> renders with show property 1`] = `
+<React.Fragment>
+  <Backdrop
+    show="true"
+  />
+  <div
+    className="Modal Opened"
+  >
+    Hello world
+  </div>
+</React.Fragment>
+`;

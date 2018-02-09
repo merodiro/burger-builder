@@ -1,7 +1,10 @@
 import React, { Component, Fragment } from 'react'
+import mapValues from 'lodash/mapValues'
 
 import Burger from '../../components/Burger/Burger'
 import BuildControls from '../../components/Burger/BuildControls/BuildControls'
+import Modal from '../../components/UI/Modal/Modal'
+import OrderSummary from '../../components/Burger/OrderSummary/OrderSummary'
 
 const INGREDIENT_PRICES = {
   salad: 0.5,
@@ -18,13 +21,12 @@ export default class BurgerBuilder extends Component {
       cheese: 0,
       meat: 0,
     },
-    totalPrice: 4,
+    purchasing: false,
   }
 
   addIngredientHandled = type => {
     this.setState((oldState, props) => {
       return {
-        totalPrice: oldState.totalPrice + INGREDIENT_PRICES[type],
         ingredients: {
           ...oldState.ingredients,
           [type]: oldState.ingredients[type] + 1,
@@ -38,7 +40,6 @@ export default class BurgerBuilder extends Component {
       return
     }
     this.setState((oldState, props) => ({
-      totalPrice: oldState.totalPrice - INGREDIENT_PRICES[type],
       ingredients: {
         ...oldState.ingredients,
         [type]: oldState.ingredients[type] - 1,
@@ -46,18 +47,47 @@ export default class BurgerBuilder extends Component {
     }))
   }
 
+  purchaseHandeler = () => {
+    this.setState({ purchasing: true })
+  }
+
+  purchaseCancelHandeler = () => {
+    this.setState({ purchasing: false })
+  }
+
+  purchaseContinueHandeler = () => {
+    console.log('You Continue!')
+  }
+
   render() {
-    let { ingredients } = this.state
-    const disabledInfo = {}
-    Object.keys(ingredients).forEach(key => {
-      disabledInfo[key] = ingredients[key] <= 0
-    })
+    const { ingredients } = this.state
+    const disabledInfo = mapValues(ingredients, amount => amount <= 0)
+
+    const price = Object.entries(ingredients)
+      .map(([key, amount]) => INGREDIENT_PRICES[key] * amount)
+      .reduce((sum, el) => sum + el, 4)
+
+    const purchasable =
+      Object.values(ingredients).filter(amount => amount > 0).length > 0
+
     return (
       <Fragment>
-        <Burger ingredients={this.state.ingredients} />
+        <Modal
+          show={this.state.purchasing}
+          closed={this.purchaseCancelHandeler}
+        >
+          <OrderSummary
+            ingredients={ingredients}
+            purchaseContinue={this.purchaseContinueHandeler}
+            purchaseCancel={this.purchaseCancelHandeler}
+          />
+        </Modal>
+        <Burger ingredients={ingredients} />
         <BuildControls
-          price={this.state.totalPrice}
+          price={price}
           disabled={disabledInfo}
+          purchasable={purchasable}
+          ordered={this.purchaseHandeler}
           ingredientAdded={this.addIngredientHandled}
           ingredientRemoved={this.removeIngredientHandled}
         />

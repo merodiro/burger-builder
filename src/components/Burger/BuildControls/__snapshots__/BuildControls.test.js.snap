@@ -35,5 +35,11 @@ exports[`<BuildControls> renders the same output 1`] = `
     label="Meat"
     removed={[Function]}
   />
+  <button
+    className="OrderButton"
+    disabled={true}
+  >
+    Order Now
+  </button>
 </div>
 `;

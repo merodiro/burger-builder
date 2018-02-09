@@ -2,6 +2,23 @@
 
 exports[`<BurgerBuilder> renders the same output 1`] = `
 <React.Fragment>
+  <Modal
+    closed={[Function]}
+    show={false}
+  >
+    <OrderSummary
+      ingredients={
+        Object {
+          "bacon": 0,
+          "cheese": 0,
+          "meat": 0,
+          "salad": 0,
+        }
+      }
+      purchaseCancel={[Function]}
+      purchaseContinue={[Function]}
+    />
+  </Modal>
   <_default
     ingredients={
       Object {
@@ -23,13 +40,32 @@ exports[`<BurgerBuilder> renders the same output 1`] = `
     }
     ingredientAdded={[Function]}
     ingredientRemoved={[Function]}
+    ordered={[Function]}
     price={4}
+    purchasable={false}
   />
 </React.Fragment>
 `;
 
 exports[`<BurgerBuilder> renders with ingredents 1`] = `
 <React.Fragment>
+  <Modal
+    closed={[Function]}
+    show={false}
+  >
+    <OrderSummary
+      ingredients={
+        Object {
+          "bacon": 1,
+          "cheese": 2,
+          "meat": 1,
+          "salad": 1,
+        }
+      }
+      purchaseCancel={[Function]}
+      purchaseContinue={[Function]}
+    />
+  </Modal>
   <_default
     ingredients={
       Object {
@@ -51,7 +87,9 @@ exports[`<BurgerBuilder> renders with ingredents 1`] = `
     }
     ingredientAdded={[Function]}
     ingredientRemoved={[Function]}
-    price={4}
+    ordered={[Function]}
+    price={7.3}
+    purchasable={true}
   />
 </React.Fragment>
 `;

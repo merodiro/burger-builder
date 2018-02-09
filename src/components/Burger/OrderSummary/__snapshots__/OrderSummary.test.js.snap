@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<OrderSummary> renders the same output 1`] = `
+<React.Fragment>
+  <h3>
+    Your Order
+  </h3>
+  <p>
+    A delicious burger with the following ingredients:
+  </p>
+  <ul>
+    <li
+      key="salad"
+    >
+      <span
+        className="IngredientKey"
+      >
+        salad
+        :
+      </span>
+       
+      2
+    </li>
+    <li
+      key="bacon"
+    >
+      <span
+        className="IngredientKey"
+      >
+        bacon
+        :
+      </span>
+       
+      1
+    </li>
+    <li
+      key="cheese"
+    >
+      <span
+        className="IngredientKey"
+      >
+        cheese
+        :
+      </span>
+       
+      1
+    </li>
+    <li
+      key="meat"
+    >
+      <span
+        className="IngredientKey"
+      >
+        meat
+        :
+      </span>
+       
+      2
+    </li>
+  </ul>
+  <p>
+    Continue to Checkout?
+  </p>
+  <Button
+    type="Danger"
+  >
+    Cancel
+  </Button>
+  <Button
+    type="Success"
+  >
+    Continue
+  </Button>
+</React.Fragment>
+`;

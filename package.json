@@ -4,6 +4,8 @@
   "private": true,
   "homepage": "https://merodiro.github.io/burger-builder",
   "dependencies": {
+    "lodash": "^4.17.5",
+    "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "2.0.0-next.47d2d941"
@@ -11,7 +13,6 @@
   "devDependencies": {
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
-    "gh-pages": "^1.1.0",
     "jest-enzyme": "^4.2.0",
     "react-test-renderer": "^16.2.0"
   },
@@ -20,8 +21,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "predeploy": "npm run build"
   },
   "browserslist": {
     "development": [
