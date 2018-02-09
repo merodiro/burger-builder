@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BuildControls> renders the same output 1`] = `
+<div
+  className="BuildControls"
+>
+  <p>
+    Current Price: 
+    <strong>
+      4.00
+    </strong>
+  </p>
+  <BuildControl
+    added={[Function]}
+    key="Salad"
+    label="Salad"
+    removed={[Function]}
+  />
+  <BuildControl
+    added={[Function]}
+    disabled={true}
+    key="Bacon"
+    label="Bacon"
+    removed={[Function]}
+  />
+  <BuildControl
+    added={[Function]}
+    key="Cheese"
+    label="Cheese"
+    removed={[Function]}
+  />
+  <BuildControl
+    added={[Function]}
+    key="Meat"
+    label="Meat"
+    removed={[Function]}
+  />
+</div>
+`;

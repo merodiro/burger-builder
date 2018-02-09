@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Layout> renders the same output 1`] = `
+<React.Fragment>
+  <div>
+    Toolbar, SideDrawer, Backdrop
+  </div>
+  <main
+    className="Content"
+  />
+</React.Fragment>
+`;
+
+exports[`<Layout> renders with children 1`] = `
+<React.Fragment>
+  <div>
+    Toolbar, SideDrawer, Backdrop
+  </div>
+  <main
+    className="Content"
+  >
+    Hello world
+  </main>
+</React.Fragment>
+`;

@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BuildControl> renders the same output 1`] = `
+<div
+  className="BuildControl"
+>
+  <div
+    className="Label"
+  >
+    Bacon
+  </div>
+  <button
+    className="Less"
+    disabled="true"
+  >
+    Less
+  </button>
+  <button
+    className="More"
+  >
+    More
+  </button>
+</div>
+`;

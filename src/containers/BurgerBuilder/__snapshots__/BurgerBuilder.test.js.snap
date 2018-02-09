@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BurgerBuilder> renders the same output 1`] = `
+<React.Fragment>
+  <_default
+    ingredients={
+      Object {
+        "bacon": 0,
+        "cheese": 0,
+        "meat": 0,
+        "salad": 0,
+      }
+    }
+  />
+  <BuildControls
+    disabled={
+      Object {
+        "bacon": true,
+        "cheese": true,
+        "meat": true,
+        "salad": true,
+      }
+    }
+    ingredientAdded={[Function]}
+    ingredientRemoved={[Function]}
+    price={4}
+  />
+</React.Fragment>
+`;
+
+exports[`<BurgerBuilder> renders with ingredents 1`] = `
+<React.Fragment>
+  <_default
+    ingredients={
+      Object {
+        "bacon": 1,
+        "cheese": 2,
+        "meat": 1,
+        "salad": 1,
+      }
+    }
+  />
+  <BuildControls
+    disabled={
+      Object {
+        "bacon": false,
+        "cheese": false,
+        "meat": false,
+        "salad": false,
+      }
+    }
+    ingredientAdded={[Function]}
+    ingredientRemoved={[Function]}
+    price={4}
+  />
+</React.Fragment>
+`;

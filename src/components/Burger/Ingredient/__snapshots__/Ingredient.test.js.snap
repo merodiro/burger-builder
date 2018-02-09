@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Ingredient> renders the same output 1`] = `
+<div
+  className="bread-bottom"
+/>
+`;
+
+exports[`<Ingredient> renders the same output 2`] = `
+<div
+  className="bread-top"
+>
+  <React.Fragment>
+    <div
+      className="seeds1"
+    />
+    <div
+      className="seeds2"
+    />
+  </React.Fragment>
+</div>
+`;
+
+exports[`<Ingredient> renders the same output 3`] = `
+<div
+  className="meat"
+/>
+`;
+
+exports[`<Ingredient> renders the same output 4`] = `
+<div
+  className="cheese"
+/>
+`;
+
+exports[`<Ingredient> renders the same output 5`] = `
+<div
+  className="salad"
+/>
+`;
+
+exports[`<Ingredient> renders the same output 6`] = `
+<div
+  className="bacon"
+/>
+`;

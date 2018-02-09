@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Burger> renders the same output 1`] = `
+<div
+  className="Burger"
+>
+  <Ingredient
+    type="bread-top"
+  />
+  <p>
+    Please start adding ingredients!
+  </p>
+  <Ingredient
+    type="bread-bottom"
+  />
+</div>
+`;
+
+exports[`<Burger> renders with ingredients 1`] = `
+<div
+  className="Burger"
+>
+  <Ingredient
+    type="bread-top"
+  />
+  <Ingredient
+    key="salad0"
+    type="salad"
+  />
+  <Ingredient
+    key="salad1"
+    type="salad"
+  />
+  <Ingredient
+    key="salad2"
+    type="salad"
+  />
+  <Ingredient
+    key="bacon0"
+    type="bacon"
+  />
+  <Ingredient
+    key="cheese0"
+    type="cheese"
+  />
+  <Ingredient
+    key="cheese1"
+    type="cheese"
+  />
+  <Ingredient
+    key="meat0"
+    type="meat"
+  />
+  <Ingredient
+    type="bread-bottom"
+  />
+</div>
+`;
