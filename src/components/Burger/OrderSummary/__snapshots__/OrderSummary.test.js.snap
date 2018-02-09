@@ -59,6 +59,11 @@ exports[`<OrderSummary> renders the same output 1`] = `
     </li>
   </ul>
   <p>
+    <strong>
+      Total Price: 
+    </strong>
+  </p>
+  <p>
     Continue to Checkout?
   </p>
   <Button

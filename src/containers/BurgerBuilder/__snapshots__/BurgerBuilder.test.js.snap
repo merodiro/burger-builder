@@ -15,6 +15,7 @@ exports[`<BurgerBuilder> renders the same output 1`] = `
           "salad": 0,
         }
       }
+      price={4}
       purchaseCancel={[Function]}
       purchaseContinue={[Function]}
     />
@@ -62,6 +63,7 @@ exports[`<BurgerBuilder> renders with ingredents 1`] = `
           "salad": 1,
         }
       }
+      price={7.3}
       purchaseCancel={[Function]}
       purchaseContinue={[Function]}
     />

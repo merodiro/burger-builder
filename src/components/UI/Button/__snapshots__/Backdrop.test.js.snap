@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<Backdrop> renders the same output 1`] = `""`;
-
-exports[`<Backdrop> renders with show property 1`] = `
-<div
-  className="Backdrop"
-/>
-`;

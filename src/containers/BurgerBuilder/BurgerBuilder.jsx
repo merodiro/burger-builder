@@ -78,6 +78,7 @@ export default class BurgerBuilder extends Component {
         >
           <OrderSummary
             ingredients={ingredients}
+            price={price}
             purchaseContinue={this.purchaseContinueHandeler}
             purchaseCancel={this.purchaseCancelHandeler}
           />
