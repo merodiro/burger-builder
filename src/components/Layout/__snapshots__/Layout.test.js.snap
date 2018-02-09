@@ -2,9 +2,7 @@
 
 exports[`<Layout> renders the same output 1`] = `
 <React.Fragment>
-  <div>
-    Toolbar, SideDrawer, Backdrop
-  </div>
+  <Toolbar />
   <main
     className="Content"
   />
@@ -13,9 +11,7 @@ exports[`<Layout> renders the same output 1`] = `
 
 exports[`<Layout> renders with children 1`] = `
 <React.Fragment>
-  <div>
-    Toolbar, SideDrawer, Backdrop
-  </div>
+  <Toolbar />
   <main
     className="Content"
   >

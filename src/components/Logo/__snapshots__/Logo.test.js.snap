@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Logo> renders the same output 1`] = `
+<div
+  className="Logo"
+>
+  <img
+    alt="Burger Builder Logo"
+    src="burger-logo.png"
+  />
+</div>
+`;
