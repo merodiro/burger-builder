@@ -12,7 +12,9 @@ describe('<OrderSummary>', () => {
       cheese: 1,
       meat: 2,
     }
-    const component = shallow(<OrderSummary price={5.556} ingredients={ingredients} />)
+    const component = shallow(
+      <OrderSummary price={5.556} ingredients={ingredients} />
+    )
     expect(component).toMatchSnapshot()
   })
 })

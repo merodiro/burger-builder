@@ -10,7 +10,7 @@ describe('<BuildControls>', () => {
       bacon: true,
       salad: false,
       meat: true,
-      cheese: true
+      cheese: true,
     }
     const component = shallow(
       <BuildControls price={4} disabled={{ bacon: true }} />

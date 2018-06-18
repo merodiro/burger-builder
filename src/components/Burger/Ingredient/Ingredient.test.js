@@ -17,6 +17,6 @@ describe('<Ingredient>', () => {
     types.forEach(type => {
       const component = shallow(<Ingredient type={type} />)
       expect(component).toMatchSnapshot()
-    });
+    })
   })
 })
