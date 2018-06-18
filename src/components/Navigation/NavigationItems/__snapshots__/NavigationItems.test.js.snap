@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NavigationItems> renders the same output 1`] = `
+<nav
+  className="NavigationItems"
+>
+  <ul>
+    <NavigationItem
+      active={true}
+      link="/"
+    >
+      Burger Builder
+    </NavigationItem>
+    <NavigationItem
+      link="/"
+    >
+      Checkout
+    </NavigationItem>
+  </ul>
+</nav>
+`;

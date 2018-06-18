@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NavigationItem> renders the same output 1`] = `
+<li
+  className="NavigationItem"
+>
+  <a
+    className="active"
+    href="/"
+  >
+    A link
+  </a>
+</li>
+`;

@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SideDrawer> renders the same output 1`] = `
+<div
+  className="SideDrawer"
+>
+  <div
+    className="Logo"
+  >
+    <Logo />
+  </div>
+  <NavigationItems />
+</div>
+`;

@@ -7,9 +7,15 @@ exports[`<Toolbar> renders the same output 1`] = `
   <div>
     MENU
   </div>
-  <Logo />
-  <nav>
-    ...
+  <div
+    className="Logo"
+  >
+    <Logo />
+  </div>
+  <nav
+    className="DesktopOnly"
+  >
+    <NavigationItems />
   </nav>
 </header>
 `;
