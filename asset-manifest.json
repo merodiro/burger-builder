@@ -1,0 +1,11 @@
+{
+  "runtime~main.js": "/burger-builder/static/js/runtime~main.8b83b1d5.js",
+  "runtime~main.js.map": "/burger-builder/static/js/runtime~main.8b83b1d5.js.map",
+  "vendors.js": "/burger-builder/static/js/vendors.fb12cc78.chunk.js",
+  "vendors.js.map": "/burger-builder/static/js/vendors.fb12cc78.chunk.js.map",
+  "main.css": "/burger-builder/static/css/main.30bf49a6.chunk.css",
+  "main.js": "/burger-builder/static/js/main.04091d16.chunk.js",
+  "main.js.map": "/burger-builder/static/js/main.04091d16.chunk.js.map",
+  "static/media/burger-logo.png": "/burger-builder/static/media/burger-logo.b8503d26.png",
+  "index.html": "/burger-builder/index.html"
+}
