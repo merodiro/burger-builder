@@ -12,6 +12,7 @@ exports[`<BuildControls> renders the same output 1`] = `
   </p>
   <BuildControl
     added={[Function]}
+    disabled={false}
     key="Salad"
     label="Salad"
     removed={[Function]}
@@ -25,19 +26,21 @@ exports[`<BuildControls> renders the same output 1`] = `
   />
   <BuildControl
     added={[Function]}
+    disabled={true}
     key="Cheese"
     label="Cheese"
     removed={[Function]}
   />
   <BuildControl
     added={[Function]}
+    disabled={true}
     key="Meat"
     label="Meat"
     removed={[Function]}
   />
   <button
     className="OrderButton"
-    disabled={true}
+    disabled={false}
   >
     Order Now
   </button>

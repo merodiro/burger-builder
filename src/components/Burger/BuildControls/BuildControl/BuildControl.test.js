@@ -6,7 +6,7 @@ import BuildControl from './BuildControl'
 
 describe('<BuildControl>', () => {
   it('renders the same output', () => {
-    const component = shallow(<BuildControl label="Bacon" disabled="true" />)
+    const component = shallow(<BuildControl label="Bacon" disabled />)
     expect(component).toMatchSnapshot()
   })
 })

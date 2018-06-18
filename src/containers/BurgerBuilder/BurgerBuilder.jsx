@@ -25,7 +25,7 @@ export default class BurgerBuilder extends Component {
   }
 
   addIngredientHandled = type => {
-    this.setState((oldState, props) => {
+    this.setState(oldState => {
       return {
         ingredients: {
           ...oldState.ingredients,
@@ -39,7 +39,7 @@ export default class BurgerBuilder extends Component {
     if (this.state.ingredients[type] <= 0) {
       return
     }
-    this.setState((oldState, props) => ({
+    this.setState(oldState => ({
       ingredients: {
         ...oldState.ingredients,
         [type]: oldState.ingredients[type] - 1,

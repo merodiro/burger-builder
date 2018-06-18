@@ -2,8 +2,13 @@
 
 exports[`<Layout> renders the same output 1`] = `
 <React.Fragment>
-  <Toolbar />
-  <SideDrawer />
+  <Toolbar
+    clicked={[Function]}
+  />
+  <SideDrawer
+    closed={[Function]}
+    open={false}
+  />
   <main
     className="Content"
   />
@@ -12,8 +17,13 @@ exports[`<Layout> renders the same output 1`] = `
 
 exports[`<Layout> renders with children 1`] = `
 <React.Fragment>
-  <Toolbar />
-  <SideDrawer />
+  <Toolbar
+    clicked={[Function]}
+  />
+  <SideDrawer
+    closed={[Function]}
+    open={false}
+  />
   <main
     className="Content"
   >

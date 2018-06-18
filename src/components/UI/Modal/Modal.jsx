@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import PropTypes from 'prop-types'
 
 import classes from './Modal.module.css'
 import Backdrop from '../Backdrop/Backdrop'
@@ -12,6 +13,11 @@ const Modal = ({ show, closed, children }) => {
       <div className={modalClasses.join(' ')}>{children}</div>
     </Fragment>
   )
+}
+
+Modal.propTypes = {
+  closed: PropTypes.func,
+  show: PropTypes.bool,
 }
 
 export default Modal

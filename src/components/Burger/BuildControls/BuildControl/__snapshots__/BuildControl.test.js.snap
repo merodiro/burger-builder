@@ -11,7 +11,7 @@ exports[`<BuildControl> renders the same output 1`] = `
   </div>
   <button
     className="Less"
-    disabled="true"
+    disabled={true}
   >
     Less
   </button>

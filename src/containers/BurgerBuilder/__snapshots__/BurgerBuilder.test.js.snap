@@ -20,7 +20,7 @@ exports[`<BurgerBuilder> renders the same output 1`] = `
       purchaseContinue={[Function]}
     />
   </Modal>
-  <_default
+  <Burger
     ingredients={
       Object {
         "bacon": 0,
@@ -68,7 +68,7 @@ exports[`<BurgerBuilder> renders with ingredents 1`] = `
       purchaseContinue={[Function]}
     />
   </Modal>
-  <_default
+  <Burger
     ingredients={
       Object {
         "bacon": 1,

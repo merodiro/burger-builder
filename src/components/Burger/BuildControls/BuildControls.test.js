@@ -13,7 +13,7 @@ describe('<BuildControls>', () => {
       cheese: true,
     }
     const component = shallow(
-      <BuildControls price={4} disabled={{ bacon: true }} />
+      <BuildControls price={4} disabled={disabled} purchasable />
     )
     expect(component).toMatchSnapshot()
   })

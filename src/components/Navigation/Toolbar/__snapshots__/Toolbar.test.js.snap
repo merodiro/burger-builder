@@ -4,9 +4,7 @@ exports[`<Toolbar> renders the same output 1`] = `
 <header
   className="Toolbar"
 >
-  <div>
-    MENU
-  </div>
+  <drawerToggle />
   <div
     className="Logo"
   >

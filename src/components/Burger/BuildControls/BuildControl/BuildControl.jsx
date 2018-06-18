@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import classes from './BuildControl.module.css'
 
@@ -14,6 +15,13 @@ const BuildControl = ({ label, added, removed, disabled }) => {
       </button>
     </div>
   )
+}
+
+BuildControl.propTypes = {
+  label: PropTypes.oneOf(['Salad', 'Bacon', 'Cheese', 'Meat']).isRequired,
+  added: PropTypes.func,
+  removed: PropTypes.func,
+  disabled: PropTypes.bool.isRequired,
 }
 
 export default BuildControl

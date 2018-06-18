@@ -1,14 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<SideDrawer> renders the same output 1`] = `
-<div
-  className="SideDrawer"
->
+<React.Fragment>
+  <Backdrop />
   <div
-    className="Logo"
+    className="SideDrawer Close"
   >
-    <Logo />
+    <div
+      className="Logo"
+    >
+      <Logo />
+    </div>
+    <nav>
+      <NavigationItems />
+    </nav>
   </div>
-  <NavigationItems />
-</div>
+</React.Fragment>
 `;
