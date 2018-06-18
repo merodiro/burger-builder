@@ -14,7 +14,7 @@ exports[`<Modal> renders the same output 1`] = `
 exports[`<Modal> renders with show property 1`] = `
 <React.Fragment>
   <Backdrop
-    show="true"
+    show={true}
   />
   <div
     className="Modal Opened"

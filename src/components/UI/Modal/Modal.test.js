@@ -12,7 +12,7 @@ describe('<Modal>', () => {
   })
 
   it('renders with show property', () => {
-    const component = shallow(<Modal show="true">Hello world</Modal>)
+    const component = shallow(<Modal show>Hello world</Modal>)
 
     expect(component).toMatchSnapshot()
   })

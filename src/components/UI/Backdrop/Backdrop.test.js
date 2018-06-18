@@ -12,7 +12,7 @@ describe('<Backdrop>', () => {
   })
 
   it('renders with show property', () => {
-    const component = shallow(<Backdrop show="true">Hello world</Backdrop>)
+    const component = shallow(<Backdrop show>Hello world</Backdrop>)
 
     expect(component).toMatchSnapshot()
   })

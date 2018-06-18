@@ -1,7 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<DrawerToggle> renders the same output 1`] = `
-<div>
-  MENU
+<div
+  className="DrawerToggle"
+>
+  <div />
+  <div />
+  <div />
 </div>
 `;
