@@ -1,4 +1,4 @@
-import React, { Fragment, Component } from 'react'
+import React, { Component } from 'react'
 
 import classes from './Layout.module.css'
 import Toolbar from '../Navigation/Toolbar/Toolbar'
@@ -26,14 +26,14 @@ class Layout extends Component {
   render() {
     let { children } = this.props
     return (
-      <Fragment>
+      <>
         <Toolbar clicked={this.drawerToggleClicked} />
         <SideDrawer
           closed={this.sideDrawerClosedHandler}
           open={this.state.showSideDrawer}
         />
         <main className={classes.Content}>{children}</main>
-      </Fragment>
+      </>
     )
   }
 }

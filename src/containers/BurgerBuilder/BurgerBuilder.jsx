@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component } from 'react'
 import mapValues from 'lodash/mapValues'
 
 import Burger from '../../components/Burger/Burger'
@@ -71,7 +71,7 @@ export default class BurgerBuilder extends Component {
       Object.values(ingredients).filter(amount => amount > 0).length > 0
 
     return (
-      <Fragment>
+      <>
         <Modal
           show={this.state.purchasing}
           closed={this.purchaseCancelHandeler}
@@ -92,7 +92,7 @@ export default class BurgerBuilder extends Component {
           ingredientAdded={this.addIngredientHandled}
           ingredientRemoved={this.removeIngredientHandled}
         />
-      </Fragment>
+      </>
     )
   }
 }

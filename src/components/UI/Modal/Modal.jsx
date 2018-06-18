@@ -1,4 +1,4 @@
-import React, { Fragment, Component } from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 import classes from './Modal.module.css'
@@ -19,10 +19,10 @@ export class Modal extends Component {
     let modalClasses = [classes.Modal]
     show && modalClasses.push(classes.Opened)
     return (
-      <Fragment>
+      <>
         <Backdrop show={show} clicked={closed} />
         <div className={modalClasses.join(' ')}>{children}</div>
-      </Fragment>
+      </>
     )
   }
 }

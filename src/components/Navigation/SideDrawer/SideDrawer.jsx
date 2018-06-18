@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 
 import classes from './SideDrawer.module.css'
 import Logo from '../../Logo/Logo'
@@ -11,7 +11,7 @@ const SideDrawer = ({ closed, open }) => {
     attatchedClassed = [classes.SideDrawer, classes.Open]
   }
   return (
-    <Fragment>
+    <>
       <Backdrop clicked={closed} show={open} />
       <div className={attatchedClassed.join(' ')}>
         <div className={classes.Logo}>
@@ -21,7 +21,7 @@ const SideDrawer = ({ closed, open }) => {
           <NavigationItems />
         </nav>
       </div>
-    </Fragment>
+    </>
   )
 }
 

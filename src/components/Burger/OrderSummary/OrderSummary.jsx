@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 
 import classes from './OrderSummary.module.css'
@@ -10,7 +10,7 @@ const OrderSummary = ({
   purchaseContinue,
   purchaseCancel,
 }) => (
-  <Fragment>
+  <>
     <h3>Your Order</h3>
     <p>A delicious burger with the following ingredients:</p>
     <ul>
@@ -30,7 +30,7 @@ const OrderSummary = ({
     <Button type="Success" clicked={purchaseContinue}>
       Continue
     </Button>
-  </Fragment>
+  </>
 )
 
 OrderSummary.prototype = {
